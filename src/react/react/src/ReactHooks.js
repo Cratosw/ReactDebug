@@ -153,6 +153,7 @@ export const emptyObject = {};
 
 export function useTransition(): [(() => void) => void, boolean] {
   const dispatcher = resolveDispatcher();
+  
   return dispatcher.useTransition();
 }
 

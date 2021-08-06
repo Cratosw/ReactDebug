@@ -53,8 +53,8 @@ export function typeOf(object: any) {
                 return $$typeof;
             }
         }
-      case REACT_PORTAL_TYPE:
-        return $$typeof;
+        case REACT_PORTAL_TYPE:
+          return $$typeof;
     }
   }
 
@@ -73,7 +73,9 @@ export const Profiler = REACT_PROFILER_TYPE;
 export const StrictMode = REACT_STRICT_MODE_TYPE;
 export const Suspense = REACT_SUSPENSE_TYPE;
 
-export {isValidElementType};
+export {
+  isValidElementType
+};
 
 let hasWarnedAboutDeprecatedIsAsyncMode = false;
 let hasWarnedAboutDeprecatedIsConcurrentMode = false;
@@ -86,7 +88,7 @@ export function isAsyncMode(object: any) {
       // Using console['warn'] to evade Babel and ESLint
       console['warn'](
         'The ReactIs.isAsyncMode() alias has been deprecated, ' +
-          'and will be removed in React 18+.',
+        'and will be removed in React 18+.',
       );
     }
   }
@@ -99,7 +101,7 @@ export function isConcurrentMode(object: any) {
       // Using console['warn'] to evade Babel and ESLint
       console['warn'](
         'The ReactIs.isConcurrentMode() alias has been deprecated, ' +
-          'and will be removed in React 18+.',
+        'and will be removed in React 18+.',
       );
     }
   }

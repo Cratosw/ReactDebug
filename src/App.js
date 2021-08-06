@@ -4,7 +4,6 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  debugger
   const [count, setCount] = React.useState(0)
   return (
     <div className="App">
@@ -13,14 +12,7 @@ function App() {
         <p>
           {count}
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <button onClick={()=>{setCount(()=>count+1)}}>加1</button>
       </header>
     </div>
   );
